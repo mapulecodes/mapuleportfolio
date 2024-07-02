@@ -7,7 +7,7 @@ export default createStore({
     jobTitle: null,
     about: null,
     tech_skills: null,
-    hobbies: null
+    hobbies: null,
 
   },
   getters: {
@@ -19,11 +19,11 @@ export default createStore({
     setAbout(state, value) {
       state.about = value 
     },
-    setEducation(state, value) {
-      state.tech_skills = value
-    },
-    setExperiences(state, value) {
+    setHobbies(state, value) {
       state.hobbies = value
+    },
+    setTechskills(state, value) {
+      state.tech_skills = value
     },
 
   },
@@ -72,8 +72,8 @@ export default createStore({
 
     async fetchHobbies(context) {
       try {
-      let { experiences } = await (await axios.get(portfilioURL)).data
-      context.commit("setExperiences", experiences)
+      let { hobbies } = await (await axios.get(portfilioURL)).data
+      context.commit("setHobbies", hobbies)
      } catch (e) {
       Swal.fire({
         title: "Error",

@@ -14,8 +14,8 @@ const routes = [
     component: () =>import('@/views/HomeView.vue')
   },
   {
-    path: '/tech_skills',
-    name: 'tech_skills',
+    path: '/resume',
+    name: 'resume',
     component: () =>import('@/views/HomeView.vue')
   },
 {
