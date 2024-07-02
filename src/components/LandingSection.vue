@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-bad6eb text-white">
+  <div class="container-fluid  d-flex align-items-center justify-content-center">
     <div class="row w-100">
       <div class="col-md-6 d-flex align-items-center justify-content-center">
         <img
@@ -61,7 +61,7 @@ onMounted(() => {
   font-size: 1.25rem;
 }
 
-.moving-text {
+/* .moving-text {
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -69,11 +69,11 @@ onMounted(() => {
   color: rgb(253, 253, 253); 
   white-space: nowrap;
   overflow: hidden;
-  animation: move 6s linear infinite;
-}
+  animation: move 4s linear infinite;
+} */
 
 @keyframes move {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% { transform: translateX(-100%);}
+  100% { transform: translateX(100%);}
 }
 </style>
