@@ -12,6 +12,11 @@
   nav {
     padding: 30px;
   }
+  .wrapper{
+    
+    background: linear-gradient(to bottom right, #008080, #001F4D,#666e7a,#554671 ,#3f1d5a); 
+    /* background-color: aqua; */
+  }
   
   nav a {
     font-weight: bold;

@@ -1,19 +1,19 @@
 <template>
-  <div class="gradient-background">
+  <!-- <div class="gradient-background"> -->
     <div class="container">
       <div class="row">
         <div class="col">
           <div id="details">
-            <h1 class="display-1">Resume</h1>
-            <p v-if="resume">
-              <span>{{ resume }}</span>
+            <h1 class="display-1">Projects</h1>
+            <p v-if="projects">
+              <span>{{ projects }}</span>
             </p>
             <Spinner v-else />
           </div>
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script setup>
@@ -22,10 +22,10 @@ import { computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
 
 const store = useStore()
-const resume = computed(() => store.state.resume);
+const projects = computed(() => store.state.projects);
 
 onMounted(() => {
-  store.dispatch('fetchResume')
+  store.dispatch('fetchProjects')
 })
 </script>
 
