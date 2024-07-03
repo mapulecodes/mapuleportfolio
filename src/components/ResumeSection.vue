@@ -30,15 +30,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-body {
-  margin: 0;
-  padding: 0;
-}
 
-/* .gradient-background {
-  /* background: linear-gradient(to bottom right, #008080, #001F4D);  */
-  /* height: 100vh; 
-  color: #fff; 
-} */ 
 
 </style>
