@@ -13,22 +13,17 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col ">
-          <div id="images">
-            <span v-for="(hobby, index) in hobbies" :key="index">
+        <div class="col">
+          <div id="images" class="d-flex flex-wrap justify-content-center">
+            <div v-for="(hobby, index) in hobbies" :key="index" class="text-center mb-4">
               <img
                 :src="hobby.image"
-                alt="Image 1"
+                :alt="hobby.place"
                 loading="lazy"
-                class="rounded-image image-fluid"
+                class="rounded-image"
               />
-              <p>{{ hobby.place }}</p></span
-            >
-            <!-- <img src="https://mapulecodes.github.io/fridayimages/images/art.png" alt="Image 2" loading="lazy" class="rounded-image">
-          <img src="https://mapulecodes.github.io/fridayimages/images/w.jpg" alt="Image 3" loading="lazy" class="rounded-image">
-          <img src="https://mapulecodes.github.io/fridayimages/images/gym.png" alt="Image 4" loading="lazy" class="rounded-image">
-          <img src="https://mapulecodes.github.io/fridayimages/images/canva.png" alt="Image 5" loading="lazy" class="rounded-image">
-          <img src="https://mapulecodes.github.io/fridayimages/images/hiking.png" alt="Image 6" loading="lazy" class="rounded-image"> -->
+              <p>{{ hobby.place }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -53,14 +48,12 @@ onMounted(() => {
 
 <style>
 #images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   margin-top: 20px;
+  gap: 30px; 
 }
 
 .rounded-image {
-  width: 100px;
+  width: 100px; 
   height: 100px;
   border-radius: 50%;
   border: 2px solid blue;

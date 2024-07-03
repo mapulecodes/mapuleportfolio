@@ -12,6 +12,8 @@
       </div>
     </div>
   </div>
+  
+   
 </template>
 
 <script setup>
@@ -38,13 +40,23 @@ onMounted(() => {
   store.dispatch('fetchJobTitle');
   repeat();
 });
+
+// import { loadFull } from "tsparticles";
+
+// const particlesInit = async (engine) => {
+//   await loadFull(engine);
+// };
+
+// const particlesLoaded = async (container) => {
+//   console.log("Particles container loaded", container);
+// };
 </script>
 
 <style scoped>
-.container-fluid {
+/* .container-fluid {
   background-color: #BAD6EB;
   height: 100vh;
-}
+} */
 
 .img-fluid {
   max-width: 80%; 
@@ -72,8 +84,8 @@ onMounted(() => {
   animation: move 4s linear infinite;
 } */
 
-@keyframes move {
+/* @keyframes move {
   0% { transform: translateX(-100%);}
   100% { transform: translateX(100%);}
-}
+} */
 </style>

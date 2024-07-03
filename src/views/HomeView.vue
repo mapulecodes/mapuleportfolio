@@ -7,8 +7,8 @@
     <section class="row" id="about">
        <AboutSection/>
     </section>
-    <section class="row" id="education">
-     
+    <section class="row" id="particles">
+    
     </section>
       <section class="row" id="experiences">
      
@@ -28,6 +28,7 @@
 
 import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue';
+
 export default {
   name: 'HomeView',
   components: {
