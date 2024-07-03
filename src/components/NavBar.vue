@@ -1,5 +1,5 @@
 <template>
- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+ <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <router-link class="navbar-brand" to="/">
         <img src="https://mapulecodes.github.io/fridayimages/images/mmlogo.png" alt="logo" class="img-fluid" loading="lazy">

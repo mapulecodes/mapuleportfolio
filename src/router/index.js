@@ -19,8 +19,8 @@ const routes = [
     component: () =>import('@/views/HomeView.vue')
   },
 {
-  path: '/hobbies"',
-  name: 'hobbies"',
+  path: '/projects',
+  name: 'projects',
   component: () =>import('@/views/HomeView.vue')
 }
 ]
