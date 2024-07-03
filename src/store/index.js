@@ -8,7 +8,8 @@ export default createStore({
     about: null,
     hobbies: null,
     resume: null,
-    projects: null
+    projects: null,
+    testimonials: null,
 
   },
   getters: {
@@ -29,6 +30,10 @@ export default createStore({
     setProjects(state, value) {
       state.projects = value
     },
+    setTestimonials(state, value) {
+      state.testimonials = value
+    },
+    
 
   },
   actions: {
@@ -94,6 +99,19 @@ export default createStore({
       Swal.fire({
         title: "Error",
         text:"Failed to fetch the data-projects",
+        icon: "error",
+        timer: 2000
+      })
+     }
+    },
+    async fetchTestimonials(context) {
+      try {
+      let { testimonials } = await (await axios.get(portfilioURL)).data
+      context.commit("setTestimonials", testimonials)
+     } catch (e) {
+      Swal.fire({
+        title: "Error",
+        text:"Failed to fetch the data-testimonials",
         icon: "error",
         timer: 2000
       })
