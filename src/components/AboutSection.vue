@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="about-section">
-          <h1 class="display-4">About</h1>
+          <h1 class="display-1">About</h1>
           <p v-if="about?.length">   
             <span>{{ about [0] }}</span>
              <span>{{ about [1] }}</span>
