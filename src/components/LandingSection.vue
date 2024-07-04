@@ -1,19 +1,17 @@
 <template>
-  <div class="container-fluid  d-flex align-items-center justify-content-center">
-    <div class="row w-100">
-      <div class="col-md-6 d-flex align-items-center justify-content-center">
-        <img
-          src="https://mapulecodes.github.io/fridayimages/images/1.png" alt="profile" class="img-fluid" loading="lazy"/>
-      </div>
-      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+  <div class="container full-screen">
+    <div class="row">
+      <video
+        src="https://mapulecodes.github.io/fridayimages/images/landing.mp4" class="media-fluid video-fluid" autoplay loop muted>
+      </video>
+      <img src="https://mapulecodes.github.io/fridayimages/images/limage.png" class="media-fluid img-fluid" alt="Landing Image">
+      <div class="overlay-content">
         <h1 class="header">Mapule Mbuzwana</h1>
         <a href="path/to/your/resume.pdf" target="_blank" class="btn btn-primary resume-btn">Resume</a>
         <div class="moving-text">{{ title }}</div>
       </div>
     </div>
   </div>
-  
-   
 </template>
 
 <script setup>
@@ -40,27 +38,41 @@ onMounted(() => {
   store.dispatch('fetchJobTitle');
   repeat();
 });
-
-// import { loadFull } from "tsparticles";
-
-// const particlesInit = async (engine) => {
-//   await loadFull(engine);
-// };
-
-// const particlesLoaded = async (container) => {
-//   console.log("Particles container loaded", container);
-// };
 </script>
 
 <style scoped>
-/* .container-fluid {
-  background-color: #BAD6EB;
-  height: 100vh;
-} */
+.full-screen {
+  height: calc(100vh - 56px); 
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.media-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .img-fluid {
-  max-width: 80%; 
-  height: auto;
+  display: none;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white; 
+  padding: 20px; 
 }
 
 .header {
@@ -71,21 +83,23 @@ onMounted(() => {
 .resume-btn {
   margin-bottom: 20px;
   font-size: 1.25rem;
+  z-index: 10;
 }
 
-/* .moving-text {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  font-size: 5rem; 
-  color: rgb(253, 253, 253); 
-  white-space: nowrap;
-  overflow: hidden;
-  animation: move 4s linear infinite;
-} */
-
-/* @keyframes move {
-  0% { transform: translateX(-100%);}
-  100% { transform: translateX(100%);}
-} */
+@media screen and (max-width: 768px) {
+  .video-fluid {
+    display: none;
+  }
+  .img-fluid {
+    display: block;
+    position: relative;
+  }
+  .overlay-content {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    background: none;
+    color: black; 
+  }
+}
 </style>

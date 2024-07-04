@@ -26,3 +26,6 @@
   nav a.router-link-exact-active {
     color: #3c2562;
   }
+  ::-webkit-scrollbar{
+    display:none;
+  }
