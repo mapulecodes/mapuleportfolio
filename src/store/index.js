@@ -10,6 +10,7 @@ export default createStore({
     resume: null,
     projects: null,
     testimonials: null,
+    education: null
 
   },
   getters: {
@@ -24,8 +25,14 @@ export default createStore({
     setHobbies(state, value) {
       state.hobbies = value 
     },
-    setResume(state, value) {
-      state.resume = value
+    setSkills(state, value) {
+      state.skills = value
+    },
+    setEducation(state, value) {
+      state.education = value
+    },
+    setExperience(state, value) {
+      state.experience = value
     },
     setProjects(state, value) {
       state.projects = value
@@ -77,19 +84,47 @@ export default createStore({
       })
      }
     },
-    async fetchResume(context) {
+    async fetchSkills(context) {
       try {
-      let { resume } = await (await axios.get(portfilioURL)).data
-      context.commit("setResume", resume)
+      let { skills } = await (await axios.get(portfilioURL)).data
+      context.commit("setSkills", skills)
      } catch (e) {
       Swal.fire({
         title: "Error",
-        text:"Failed to fetch the data-resume",
+        text:"Failed to fetch the data-skills",
         icon: "error",
         timer: 2000
       })
      }
     },
+
+    async fetchEducation(context) {
+      try {
+      let { education } = await (await axios.get(portfilioURL)).data
+      context.commit("setEducation", education)
+     } catch (e) {
+      Swal.fire({
+        title: "Error",
+        text:"Failed to fetch the data-education",
+        icon: "error",
+        timer: 2000
+      })
+     }
+    },
+    async fetchExperience(context) {
+      try {
+      let { experience } = await (await axios.get(portfilioURL)).data
+      context.commit("setExperience", experience)
+     } catch (e) {
+      Swal.fire({
+        title: "Error",
+        text:"Failed to fetch the data-experience",
+        icon: "error",
+        timer: 2000
+      })
+     }
+    },
+
 
     async fetchProjects(context) {
       try {
