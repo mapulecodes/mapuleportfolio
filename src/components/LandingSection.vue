@@ -5,9 +5,10 @@
       </video>
       <img src="https://mapulecodes.github.io/fridayimages/images/limage.png" class="media-fluid img-fluid" alt="Landing Image">
       <div class="overlay-content">
+        
         <h1 class="header">Mapule Mbuzwana</h1>
-        <a href="" target="_blank" class="btn btn-primary resume-btn">Resume</a>
-        <div class="moving-text">{{ title }}</div>
+        <a href="" target="_blank" class="btn btn-primary contact-btn">Contact Me</a>
+        <div class="text">{{ title }}</div>
       </div>
     </div>
   </div>
@@ -94,7 +95,7 @@ onMounted(() => {
     position: relative;
   }
   .overlay-content {
-    position: static;
+    position: absolute;
     width: 100%;
     padding: 20px;
     background: none;
