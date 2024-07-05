@@ -8,7 +8,7 @@
             <div v-for="(item, index) in projects" :key="index" class="col-md-4 mb-4">
               <CardComp>
                 <template #cardHeader>
-                  <img :src="item.image" alt="project-img" class="card-img-top"/>
+                  <img :src="item.image" alt="project-img" class="card-img-top" />
                 </template>
                 <template #cardBody>
                   <div class="card-body text-center">

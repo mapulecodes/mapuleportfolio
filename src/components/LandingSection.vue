@@ -5,11 +5,15 @@
       </video>
       <img src="https://mapulecodes.github.io/fridayimages/images/limage.png" class="media-fluid img-fluid" alt="Landing Image">
       <div class="overlay-content">
-        
         <h1 class="header">Mapule Mbuzwana</h1>
-        <a href="" target="_blank" class="btn btn-primary contact-btn">Contact Me</a>
+        <a href="#contact" class="btn btn-primary contact-btn">Contact Me</a>
         <div class="text">{{ title }}</div>
       </div>
+    </div>
+    <div class="mobile-content">
+      <h1 class="header">Mapule Mbuzwana</h1>
+      <a href="#contact" class="btn btn-primary contact-btn">Contact Me</a>
+      <div class="text">{{ title }}</div>
     </div>
   </div>
 </template>
@@ -78,12 +82,17 @@ onMounted(() => {
 .header {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: white; 
 }
 
-.resume-btn {
+.contact-btn {
   margin-bottom: 20px;
   font-size: 1.25rem;
   z-index: 10;
+}
+
+.text {
+  margin-top: 20px; 
 }
 
 @media screen and (max-width: 768px) {
@@ -95,11 +104,18 @@ onMounted(() => {
     position: relative;
   }
   .overlay-content {
-    position: absolute;
-    width: 100%;
+    display: none;
+  }
+  .mobile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    background: none;
-    color: black; 
+    color: white; 
+   
+  }
+  .header {
+    color: white; 
   }
 }
 </style>
