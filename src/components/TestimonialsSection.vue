@@ -7,15 +7,14 @@
           <div class="row" v-if="testimonials?.length">
             <div v-for="(item, index) in testimonials" :key="index" class="col-md-4 mb-4">
               <CardComp>
-                <!-- <template #cardHeader>
-                  <img :src="item.image" alt="testimonial-img" class="card-img-top"/> -->
-                <!-- </template> -->
+                <template #cardHeader>
+                  <img :src="item.image" alt="testimonial-img" class="card-img-top"/>
+                </template>
                 <template #cardBody>
                   <div class="card-body text-center">
                     <h5 class="card-title">{{ item.name }}</h5>
                     <h5 class="card-title">{{ item.surname }}</h5>
                     <h5 class="card-title">{{ item.quotes }}</h5>
-                    
                   </div>
                 </template>
               </CardComp>
@@ -48,7 +47,7 @@ onMounted(() => {
 }
 
 .card {
-  background: linear-gradient( #008080, #001F4D, #666e7a);
+  background: linear-gradient(#008080, #001F4D, #666e7a);
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

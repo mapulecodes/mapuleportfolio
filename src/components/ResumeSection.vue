@@ -99,6 +99,13 @@ onMounted(() => {
 .card-title {
   color: white; 
 }
+.card {
+  background: linear-gradient( #008080, #001F4D, #666e7a);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(25, 32, 124, 0.1);
+  color: #ffffff;
+}
 
 @media (max-width: 768px) {
   .row.justify-content-center {
