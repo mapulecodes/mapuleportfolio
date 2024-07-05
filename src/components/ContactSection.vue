@@ -25,10 +25,10 @@
       <div class="image-container">
         <img src="https://mapulecodes.github.io/fridayimages/images/contact.png" alt="Contact Image" />
         <div class="social-icons">
-          <a href="https://github.com/yourusername" target="_blank">
+          <a href="https://github.com/mapulecodes" target="_blank">
             <i class="bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/yourusername/" target="_blank">
+          <a href="https://www.linkedin.com/in/mapule-mbuzwana-334bb9218/" target="_blank">
             <i class="bi bi-linkedin"></i>
           </a>
         </div>
@@ -86,7 +86,7 @@ export default {
   align-items: center;
   padding: 20px;
   background: linear-gradient(to bottom, #001F4D, #666e7a, #554671, #3f1d5a);
-  height: 100vh;
+  min-height: 110vh; 
 }
 
 .contact-title {
@@ -171,5 +171,22 @@ button:hover {
   color: white;
   font-size: 2rem;
   margin: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container,
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
 }
 </style>

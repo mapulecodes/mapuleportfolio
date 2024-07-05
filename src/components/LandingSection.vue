@@ -1,13 +1,12 @@
 <template>
   <div class="container full-screen">
     <div class="row">
-      <video
-        src="https://mapulecodes.github.io/fridayimages/images/landing.mp4" class="media-fluid video-fluid" autoplay loop muted>
+      <video src="https://mapulecodes.github.io/fridayimages/images/landing.mp4" class="media-fluid video-fluid" autoplay loop muted>
       </video>
       <img src="https://mapulecodes.github.io/fridayimages/images/limage.png" class="media-fluid img-fluid" alt="Landing Image">
       <div class="overlay-content">
         <h1 class="header">Mapule Mbuzwana</h1>
-        <a href="path/to/your/resume.pdf" target="_blank" class="btn btn-primary resume-btn">Resume</a>
+        <a href="" target="_blank" class="btn btn-primary resume-btn">Resume</a>
         <div class="moving-text">{{ title }}</div>
       </div>
     </div>

@@ -12,7 +12,7 @@
           <Spinner v-else />
         </div>
       </div>
-      <div class="col-md-6">
+      <!-- <div class="col-md-6">
         <div class="contact-info">
           <p class="reach-out">Feel free to reach out to me!</p>
           <div class="contact-icons">
@@ -25,7 +25,7 @@
           </div>
           <img src="https://mapulecodes.github.io/fridayimages/images/contact-image.png" alt="Contact Image" class="contact-image" />
         </div>
-      </div>
+      </div> -->
     </div>
 
    
