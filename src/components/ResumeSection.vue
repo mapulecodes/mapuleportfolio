@@ -19,7 +19,7 @@
 
       <!-- Education  -->
       <h2 class="mt-5 mb-4">Education</h2>
-      <div class="row mt-5 mb-4" v-if="education?.length">
+      <div class="row justify-content-center mt-5 mb-4" v-if="education?.length">
         <div class="col-lg-6">
           <CardComp v-for="item in education" :key="item.title">
             <template #cardHeader>
@@ -32,11 +32,11 @@
             </template>
           </CardComp>
         </div>
-        <div class="col-lg-6">
+        <!-- <div class="col-lg-6">
           <div class="image-container">
             <img src="https://mapulecodes.github.io/fridayimages/images/bg.jpg" alt="Education Image" class="img-fluid" />
           </div>
-        </div>
+        </div> -->
       </div>
       <Spinner v-else />
 
