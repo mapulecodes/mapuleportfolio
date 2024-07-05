@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg gradient-navbar">
+  <nav class="navbar navbar-expand-lg gradient-navbar sticky-top">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
         <img src="https://mapulecodes.github.io/fridayimages/images/mlogo.png" alt="logo" class="img-fluid logo" loading="lazy">
