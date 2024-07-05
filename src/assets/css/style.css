@@ -1,12 +1,12 @@
-/* Bootstrap Icons */
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* app */
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Wittgenstein", serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    color: white;
   }
   
   nav {
